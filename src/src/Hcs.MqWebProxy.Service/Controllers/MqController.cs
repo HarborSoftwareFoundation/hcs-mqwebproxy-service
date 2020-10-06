@@ -24,7 +24,7 @@ namespace Helix.Hcs.MqWebProxy.Service.Controllers
         }
 
         [HttpPost]
-        [ProducesResponseType((int)HttpStatusCode.OK)]
+        [ProducesResponseType((int)HttpStatusCode.Accepted)]
         public async Task<IActionResult> Post([FromBody] QueueMessage message, CancellationToken cancellationToken)
         {
             if (message == null)
