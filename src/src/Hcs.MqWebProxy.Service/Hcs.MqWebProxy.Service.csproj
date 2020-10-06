@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <AssemblyName>Helix.Hcs.MqWebProxy.Service</AssemblyName>
+    <RootNamespace>Helix.Hcs.MqWebProxy.Service</RootNamespace>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
+    <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.Rabbitmq" Version="3.1.4" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="3.1.2" />
+    <PackageReference Include="Helix.Hcs.EventBus.Abstractions" Version="1.0.0-rc.1.291398435.3" />
+    <PackageReference Include="MassTransit" Version="7.0.4" />
+    <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.0.4" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="7.0.4" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.4.0" />
+    <PackageReference Include="Serilog.Enrichers.Environment" Version="2.2.0-dev-00761" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.2.0-dev-00244" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="4.0.0-dev-00839" />
+    <PackageReference Include="Serilog.Sinks.Http" Version="7.0.1" />
+    <PackageReference Include="Serilog.Sinks.Seq" Version="5.0.0-dev-00174" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+</Project>
