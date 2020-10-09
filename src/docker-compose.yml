@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   hcs-mqwebproxy-service:
-    image: ${DOCKER_REGISTRY:-helix}/hcs/mqwebproxy-service:${PLATFORM:-linux}-${TAG:-latest}
+    image: ${DOCKER_REGISTRY:-harbor}/hcs/mqwebproxy-service:${PLATFORM:-linux}-${TAG:-latest}
     build:
       context: .
       dockerfile: src/Hcs.MqWebProxy.Service/Dockerfile

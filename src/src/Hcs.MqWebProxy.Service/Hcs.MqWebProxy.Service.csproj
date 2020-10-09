@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <AssemblyName>Helix.Hcs.MqWebProxy.Service</AssemblyName>
-    <RootNamespace>Helix.Hcs.MqWebProxy.Service</RootNamespace>
+    <AssemblyName>Harbor.Hcs.MqWebProxy.Service</AssemblyName>
+    <RootNamespace>Harbor.Hcs.MqWebProxy.Service</RootNamespace>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..</DockerfileContext>
     <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
@@ -12,7 +12,7 @@
   <ItemGroup>
     <PackageReference Include="AspNetCore.HealthChecks.Rabbitmq" Version="3.1.4" />
     <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="3.1.2" />
-    <PackageReference Include="Helix.Hcs.EventBus.Abstractions" Version="1.0.0-rc.1.291398435.3" />
+    <PackageReference Include="Harbor.Hcs.EventBus.Abstractions" Version="1.0.0-rc.1.296879403.5" />
     <PackageReference Include="MassTransit" Version="7.0.4" />
     <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.0.4" />
     <PackageReference Include="MassTransit.RabbitMQ" Version="7.0.4" />

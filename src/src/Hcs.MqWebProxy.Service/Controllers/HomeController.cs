@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Helix.Hcs.MqWebProxy.Service.Controllers
+namespace Harbor.Hcs.MqWebProxy.Service.Controllers
 {
     public class HomeController : ControllerBase
     {

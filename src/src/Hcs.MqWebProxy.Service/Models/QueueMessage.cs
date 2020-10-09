@@ -1,4 +1,4 @@
-﻿namespace Hcs.MqWebProxy.Service.Models
+﻿namespace Harbor.Hcs.MqWebProxy.Service.Models
 {
     public class QueueMessage
     {
