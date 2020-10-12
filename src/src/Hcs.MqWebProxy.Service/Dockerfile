@@ -6,6 +6,7 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim AS build
 WORKDIR /src
+COPY ["./NuGet.config", "/"]
 COPY ["src/Hcs.MqWebProxy.Service/Hcs.MqWebProxy.Service.csproj", "src/Hcs.MqWebProxy.Service/"]
 RUN dotnet restore "src/Hcs.MqWebProxy.Service/Hcs.MqWebProxy.Service.csproj"
 COPY . .
