@@ -19,4 +19,4 @@ RUN dotnet publish "Hcs.MqWebProxy.Service.csproj" --no-restore -c Release -o /a
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Hcs.MqWebProxy.Service.dll"]
+ENTRYPOINT ["dotnet", "Harbor.Hcs.MqWebProxy.Service.dll"]
