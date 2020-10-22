@@ -1,7 +1,7 @@
 version: '3.7'
 
 services:
-  hcs-mqwebproxy-service:
+  hcs-mqwebproxy-api:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80
@@ -9,6 +9,6 @@ services:
       - EventBusConnection=${HCS_EVENT_BUS:-rabbitmq}
       - EventBusUsername=${HCS_EVENT_BUS_USERNAME:-guest}
       - EventBusPassword=${HCS_EVENT_BUS_PASSWORD:-guest}
-      - PATH_BASE=/hcs-mqwebproxy-service
+      - PATH_BASE=/hcs-mqwebproxy-api
     ports:
       - "80"

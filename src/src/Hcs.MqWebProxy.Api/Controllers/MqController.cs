@@ -1,5 +1,4 @@
-﻿using Harbor.Hcs.MqWebProxy.Service.Models;
-using Harbor.Hcs.EventBus;
+﻿using Harbor.Hcs.EventBus;
 using MassTransit;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -7,8 +6,9 @@ using System;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
+using Harbor.Hcs.MqWebProxy.Api.Models;
 
-namespace Harbor.Hcs.MqWebProxy.Service.Controllers
+namespace Harbor.Hcs.MqWebProxy.Api.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]

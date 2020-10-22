@@ -7,7 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Harbor.Hcs.MqWebProxy.Service
+namespace Harbor.Hcs.MqWebProxy.Api
 {
     public class Startup
     {

@@ -4,7 +4,7 @@ using Microsoft.Extensions.Hosting;
 using Serilog;
 using System;
 
-namespace Harbor.Hcs.MqWebProxy.Service
+namespace Harbor.Hcs.MqWebProxy.Api
 {
     public class Program
     {
