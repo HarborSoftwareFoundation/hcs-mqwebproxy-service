@@ -7,7 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace Harbor.Hcs.MqWebProxy.Api
+namespace Parusnik.Pcs.MqWebProxy.Api
 {
     public class Startup
     {
@@ -43,7 +43,7 @@ namespace Harbor.Hcs.MqWebProxy.Api
             app.UseSwagger()
                 .UseSwaggerUI(options =>
                 {
-                    options.SwaggerEndpoint($"{ (!string.IsNullOrEmpty(pathBase) ? pathBase : string.Empty) }/swagger/v1/swagger.json", "HCS MQ Web Proxy Service v1");
+                    options.SwaggerEndpoint($"{ (!string.IsNullOrEmpty(pathBase) ? pathBase : string.Empty) }/swagger/v1/swagger.json", "PCS MQ Web Proxy Service v1");
                 });
 
             app.UseRouting();

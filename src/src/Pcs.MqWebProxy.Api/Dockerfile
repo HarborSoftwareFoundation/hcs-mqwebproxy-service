@@ -7,16 +7,16 @@ EXPOSE 80
 FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim AS build
 WORKDIR /src
 COPY ["./NuGet.config", "/"]
-COPY ["src/Hcs.MqWebProxy.Api/Hcs.MqWebProxy.Api.csproj", "src/Hcs.MqWebProxy.Api/"]
-RUN dotnet restore "src/Hcs.MqWebProxy.Api/Hcs.MqWebProxy.Api.csproj"
+COPY ["src/Pcs.MqWebProxy.Api/Pcs.MqWebProxy.Api.csproj", "src/Pcs.MqWebProxy.Api/"]
+RUN dotnet restore "src/Pcs.MqWebProxy.Api/Pcs.MqWebProxy.Api.csproj"
 COPY . .
-WORKDIR "/src/src/Hcs.MqWebProxy.Api"
-RUN dotnet build "Hcs.MqWebProxy.Api.csproj" --no-restore -c Release -o /app/build
+WORKDIR "/src/src/Pcs.MqWebProxy.Api"
+RUN dotnet build "Pcs.MqWebProxy.Api.csproj" --no-restore -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "Hcs.MqWebProxy.Api.csproj" --no-restore -c Release -o /app/publish
+RUN dotnet publish "Pcs.MqWebProxy.Api.csproj" --no-restore -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Harbor.Hcs.MqWebProxy.Api.dll"]
+ENTRYPOINT ["dotnet", "Parusnik.Pcs.MqWebProxy.Api.dll"]

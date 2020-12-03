@@ -36,7 +36,7 @@ namespace Microsoft.Extensions.DependencyInjection
             {
                 hcBuilder.AddRabbitMQ(
                     $"amqp://{configuration["ServiceBusConnection"]}",
-                    name: "hcs-mqwebproxy-rabbitmq-check",
+                    name: "pcs-mqwebproxy-rabbitmq-check",
                     tags: new string[] { "rabbitmq" });
             }
 
@@ -74,7 +74,7 @@ namespace Microsoft.Extensions.DependencyInjection
             {
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "HCS MQ Web Proxy Service",
+                    Title = "PCS MQ Web Proxy Service",
                     Version = "v1",
                     Description = "The Message Queue Web Proxy Service."
                 });

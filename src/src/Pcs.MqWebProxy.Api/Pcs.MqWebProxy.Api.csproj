@@ -2,8 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <AssemblyName>Harbor.Hcs.MqWebProxy.Api</AssemblyName>
-    <RootNamespace>Harbor.Hcs.MqWebProxy.Api</RootNamespace>
+    <AssemblyName>Parusnik.Pcs.MqWebProxy.Api</AssemblyName>
+    <RootNamespace>Parusnik.Pcs.MqWebProxy.Api</RootNamespace>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..</DockerfileContext>
     <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>

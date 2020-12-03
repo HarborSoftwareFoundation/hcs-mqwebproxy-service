@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace Harbor.Hcs.MqWebProxy.Api.Controllers
+namespace Parusnik.Pcs.MqWebProxy.Api.Controllers
 {
     public class HomeController : ControllerBase
     {

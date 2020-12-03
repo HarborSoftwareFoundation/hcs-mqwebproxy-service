@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30524.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0EB10465-9161-4636-B096-D0425C50DC88}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hcs.MqWebProxy.Api", "src\Hcs.MqWebProxy.Api\Hcs.MqWebProxy.Api.csproj", "{A6FEEE55-F003-4550-A15A-141F410C3FC4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pcs.MqWebProxy.Api", "src\Pcs.MqWebProxy.Api\Pcs.MqWebProxy.Api.csproj", "{A6FEEE55-F003-4550-A15A-141F410C3FC4}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{E90A7F98-6B19-40CF-B057-4E920C23EC29}"
 EndProject

@@ -6,9 +6,9 @@ using System;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
-using Harbor.Hcs.MqWebProxy.Api.Models;
+using Parusnik.Pcs.MqWebProxy.Api.Models;
 
-namespace Harbor.Hcs.MqWebProxy.Api.Controllers
+namespace Parusnik.Pcs.MqWebProxy.Api.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
