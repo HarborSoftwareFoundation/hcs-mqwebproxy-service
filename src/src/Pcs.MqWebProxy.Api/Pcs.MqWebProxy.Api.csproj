@@ -10,9 +10,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AspNetCore.HealthChecks.Rabbitmq" Version="3.1.4" />
-    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="3.1.2" />
-    <PackageReference Include="Harbor.Hcs.EventBus.Abstractions" Version="1.0.0-rc.1.296879403.5" />
+    <PackageReference Include="AspNetCore.HealthChecks.Rabbitmq" Version="5.0.0-preview1" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="5.0.0-preview1" />
+    <PackageReference Include="Parusnik.Pcs.EventBus.Abstractions" Version="1.0.0-rc.1.296879403.10" />
     <PackageReference Include="MassTransit" Version="7.0.6" />
     <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.0.6" />
     <PackageReference Include="MassTransit.RabbitMQ" Version="7.0.6" />

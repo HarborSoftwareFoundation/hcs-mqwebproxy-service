@@ -1,11 +1,11 @@
-﻿using Harbor.Hcs.EventBus;
-using MassTransit;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using System;
+﻿using System;
 using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
+using MassTransit;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Parusnik.Pcs.EventBus;
 using Parusnik.Pcs.MqWebProxy.Api.Models;
 
 namespace Parusnik.Pcs.MqWebProxy.Api.Controllers

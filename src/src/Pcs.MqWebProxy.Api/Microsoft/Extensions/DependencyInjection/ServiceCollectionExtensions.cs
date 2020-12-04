@@ -1,9 +1,9 @@
-﻿using MassTransit;
+﻿using System;
+using MassTransit;
 using MassTransit.MultiBus;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.OpenApi.Models;
-using System;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
