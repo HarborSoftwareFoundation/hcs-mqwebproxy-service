@@ -1,4 +1,7 @@
-﻿using System;
+﻿// Copyright (c) Parusnik.
+// Licensed under the MIT License. See LICENSE in the project root for license information.
+
+using System;
 using MassTransit;
 using MassTransit.MultiBus;
 using Microsoft.Extensions.Configuration;

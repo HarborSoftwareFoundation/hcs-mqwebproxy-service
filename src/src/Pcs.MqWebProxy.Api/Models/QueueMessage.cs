@@ -1,4 +1,7 @@
-﻿namespace Parusnik.Pcs.MqWebProxy.Api.Models
+﻿// Copyright (c) Parusnik.
+// Licensed under the MIT License. See LICENSE in the project root for license information.
+
+namespace Parusnik.Pcs.MqWebProxy.Api.Models
 {
     public class QueueMessage
     {
